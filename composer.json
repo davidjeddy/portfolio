@@ -1,0 +1,17 @@
+{
+    "name": "davidjeddy/portfolio",
+    "description": "Professional porfolio of David Eddy, 2014.",
+    "require": {
+        "components/jquery": "2.0.x",
+        "twitter/bootstrap": "3.0.x",
+        "monolog/monolog": "1.7.x"
+    },
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "David Eddy",
+            "email": "me@davidjeddy.com"
+        }
+    ],
+    "minimum-stability": "RC"
+}
