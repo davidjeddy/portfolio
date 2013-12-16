@@ -1,2 +1,2 @@
 <?php
-echo 'asdf';
+require_once "./config.php";
