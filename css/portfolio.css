@@ -1,6 +1,7 @@
 /* CSS Document */
 body {
     overflow: hidden;
+    text-align: center;
 }
 
 .main_panel {
@@ -9,8 +10,8 @@ body {
     overflow-x: hidden;x;
 }
 
-.scroll {
-
+body >.scroll {
+margin: 0 auto; width: 900px;
 }
 
 .scroll up {

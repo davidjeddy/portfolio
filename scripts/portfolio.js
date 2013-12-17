@@ -1,4 +1,10 @@
 <!--//
+/* Old browser fixes */
+if ( ! window.console ) console = { log: function(){} };
+
+
+
+/* global vars */
 var win_height 	= 600;
 var panels		= Array();
 var panel_count = 0;
@@ -45,14 +51,12 @@ $(".scroll").click(function() {
 
 /* on ready actions */
 $( document ).ready(function() {
-    console.log( "ready!" );
-
     //Get the number of main_panel divs to use with the sroll feature
     $( "body > div").each(function(){
     	panels.push( $( this ).attr( "id" ) );
     });
 
-    console.log( panels );
+    console.log( "panels: "+panels );
 
     $( ".main_panel" ).height( $( window ).height() );
 });
