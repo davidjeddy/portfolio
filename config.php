@@ -1,12 +1,12 @@
 <?php
 /* Standard configs */
 define('SITEOWNER', "David Eddy");
-define('SITETY', 	"Portfolio");
+define('SITETITLE', "Portfolio");
+define('SITEROOT', 	"./sites/portfolio");
 define('DB_ADDY',	"");
 define('DB_USRNM',	"");
 define('DB_PASS',	"");
 define('DB_NAME',	"");
-define('SECTION',	serialize(array('Home' => './index.php')));
 
 /* Edit for your locality */
 define('DTFORMATE', 	"YYYY-MM-DD");
