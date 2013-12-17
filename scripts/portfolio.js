@@ -1,36 +1,44 @@
 <!--//
 var win_height 	= 600;
 var panels		= Array();
+var panel_count = 0;
 
 
 
 /* jQ logic */
 /* Button actions */
-$(".scoll-up").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
-    }, 2000);
-});
-
-$(".scroll-down").click(function() {
-    console.log( ".scroll-down heard" );
-	//get the current closest 'main_panel'
-    var closest_panel = $( this ).parent().data( "title" );
-    console.log( closest_panel );
+$(".scroll").click(function() {
 
     //Where does the cloests main_panel occure in the panels array
-    var count = 0;
+    var panel_elem = null;
 
-    count = jQuery.inArray( closest_panel, panels ) + 1;
+    //what direction to scroll
+    if ($( this ).hasClass( "up" )) {
+        panel_elem = $( this ).parent().prev( "div" ).data( "title" );
+        panel_count--;
+    } else {
+        panel_elem = $( this ).parent().data( "title" );
+        panel_count++;
+    }
+
+    //Make sure the counter does not go out of bounds
+    if (panel_count < 0 ) {
+        
+        panel_count = 0;
+    } else if (panel_count > panels.length) {
+
+        panel_count = panels.length;
+    }
+
+    console.log( "counter is: "+panel_count);
+
+
 	//get the next main_panel down
-    console.log( panels[count] );
+    console.log( "Next panel is: "+panels[panel_count] );
+    console.log( panels[panel_count] );
 
 	//scroll to the next main_panel down
-
-    $('html, body').animate({
-        scrollTop: $( panels[count] ).offset().top
-    }, 2000);
-
+    $( "#"+panels[panel_count] ).ScrollTo();
 
     return true;
 });
@@ -41,14 +49,11 @@ $( document ).ready(function() {
 
     //Get the number of main_panel divs to use with the sroll feature
     $( "body > div").each(function(){
-    	panels.push( $( this ).data( "title" ) );
+    	panels.push( $( this ).attr( "id" ) );
     });
 
     console.log( panels );
 
-    //win_height = $( window ).height();
-    //$( ".main_panel" ).height( win_height );
-    //$().resize( );
     $( ".main_panel" ).height( $( window ).height() );
 });
 
