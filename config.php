@@ -9,7 +9,7 @@ define('DB_PASS',	"");
 define('DB_NAME',	"");
 
 /* Edit for your locality */
-define('DTFORMATE', 	"YYYY-MM-DD");
+define('DATEFORMATE', 	"YYYY-MM-DD");
 define('TIMEFORMATE', 	"HH-mm-ss");
 
 /* DO NOT CHANGE! */
