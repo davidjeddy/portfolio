@@ -1,11 +1,6 @@
 {
     "name": "davidjeddy/portfolio",
     "description": "Professional porfolio of David Eddy, 2014.",
-    "require": {
-        "components/jquery": "2.0.x",
-        "twitter/bootstrap": "3.0.x",
-        "monolog/monolog": "1.7.x"
-    },
     "license": "Apache",
     "authors": [
         {
@@ -13,5 +8,25 @@
             "email": "me@davidjeddy.com"
         }
     ],
-    "minimum-stability": "RC"
+    "minimum-stability": "RC",
+    "repositories": {
+        "balupton": {
+            "type": "package",
+            "package": {
+                "name": "balupton/jquery-scrollto",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/balupton/jquery-scrollto.git",
+                    "type": "git",
+                    "reference": "791cc3157956e1319c32aa14d5eaa5fd6bae379f"
+                }
+            }
+        }
+    },
+        "require": {
+        "components/jquery": "2.0.x",
+        "twitter/bootstrap": "3.0.x",
+        "monolog/monolog": "1.7.x",
+        "balupton/jquery-scrollto": "1.0.0"
+    }
 }

@@ -12,15 +12,27 @@ $(".scoll-up").click(function() {
     }, 2000);
 });
 
-$(".scoll-down").click(function() {
+$(".scroll-down").click(function() {
+    console.log( ".scroll-down heard" );
 	//get the current closest 'main_panel'
+    var closest_panel = $( this ).parent().data( "title" );
+    console.log( closest_panel );
 
+    //Where does the cloests main_panel occure in the panels array
+    var count = 0;
+
+    count = jQuery.inArray( closest_panel, panels ) + 1;
 	//get the next main_panel down
+    console.log( panels[count] );
 
 	//scroll to the next main_panel down
+
     $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
+        scrollTop: $( panels[count] ).offset().top
     }, 2000);
+
+
+    return true;
 });
 
 /* on ready actions */
@@ -44,4 +56,4 @@ $( document ).ready(function() {
 $( window ).resize(function() {
 	$( ".main_panel" ).height( $( window ).height() );
 });
--->
+-->-

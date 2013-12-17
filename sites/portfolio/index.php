@@ -20,9 +20,13 @@
     <div class="symbol">&nbsp;</div>
     <h2>I don't make pretty web sites,</h2>
     <h2 class="indent_one">I make pretty websites work</h2>
+
+    <a class="scroll-down">down</a>
 </div>
 
 <div id="web_dev"       class="main_panel"  data-title="Web Development"  style="background-color:#FFFFFF">
+	<h3>Web Development</h3>
+    <a class="scroll-down">down</a>
 </div>
 
 <div id="multi_media"   class="main_panel"  data-title="Multi-media" style="background-color:#00FF00">
