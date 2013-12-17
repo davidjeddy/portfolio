@@ -15,23 +15,23 @@
 
 <body>
 
-<div id="welcome"       class="main_block"  data-title="Welcome" style="background-color:#666666">
+<div id="welcome"       class="main_panel"  data-title="Welcome" style="background-color:#666666">
     <h1>David Eddy, Web Developer</h1>
     <div class="symbol">&nbsp;</div>
     <h2>I don't make pretty web sites,</h2>
     <h2 class="indent_one">I make pretty websites work</h2>
 </div>
 
-<div id="web_dev"       class="main_block"  data-title="Web Development"  style="background-color:#FFFFFF">
+<div id="web_dev"       class="main_panel"  data-title="Web Development"  style="background-color:#FFFFFF">
 </div>
 
-<div id="multi_media"   class="main_block"  data-title="Multi-media" style="background-color:#00FF00">
+<div id="multi_media"   class="main_panel"  data-title="Multi-media" style="background-color:#00FF00">
 </div>
 
-<div id="about_me"      class="main_block"  data-title="About Me" style="background-color:#FF0000">
+<div id="about_me"      class="main_panel"  data-title="About Me" style="background-color:#FF0000">
 </div>
 
-<div id="hire"          class="main_block"  data-title="Hire" style="background-color:#0000FF">
+<div id="hire"          class="main_panel"  data-title="Hire" style="background-color:#0000FF">
 </div>
 
 <script language="javascript" src="<?= SITEROOT; ?>/../../vendor/components/jquery/jquery.min.js"></script>

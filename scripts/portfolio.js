@@ -12,6 +12,17 @@ $(".scoll-up").click(function() {
     }, 2000);
 });
 
+$(".scoll-down").click(function() {
+	//get the current closest 'main_panel'
+
+	//get the next main_panel down
+
+	//scroll to the next main_panel down
+    $('html, body').animate({
+        scrollTop: $("#elementtoScrollToID").offset().top
+    }, 2000);
+});
+
 /* on ready actions */
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -24,13 +35,13 @@ $( document ).ready(function() {
     console.log( panels );
 
     //win_height = $( window ).height();
-    //$( ".main_block" ).height( win_height );
+    //$( ".main_panel" ).height( win_height );
     //$().resize( );
-    $( ".main_block" ).height( $( window ).height() );
+    $( ".main_panel" ).height( $( window ).height() );
 });
 
-/* when the browser is resized, resize the main_block areas */
+/* when the browser is resized, resize the main_panel areas */
 $( window ).resize(function() {
-	$( ".main_block" ).height( $( window ).height() );
+	$( ".main_panel" ).height( $( window ).height() );
 });
 -->
