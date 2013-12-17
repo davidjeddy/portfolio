@@ -1,12 +1,22 @@
 /* CSS Document */
 body {
-/*
     overflow: hidden;
-*/
 }
 
 .main_panel {
     min-width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;x;
+}
+
+.scroll {
+
+}
+
+.scroll up {
+
+}
+
+.scroll down {
+
 }

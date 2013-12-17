@@ -8,8 +8,8 @@ var panel_count = 0;
 /* jQ logic */
 /* Button actions */
 $(".scroll").click(function() {
+    console.log( ".scroll triggered" );
 
-    //Where does the cloests main_panel occure in the panels array
     var panel_elem = null;
 
     //what direction to scroll
@@ -22,6 +22,8 @@ $(".scroll").click(function() {
     }
 
     //Make sure the counter does not go out of bounds
+    console.log( panel_count );
+
     if (panel_count < 0 ) {
         
         panel_count = 0;
@@ -30,12 +32,10 @@ $(".scroll").click(function() {
         panel_count = panels.length;
     }
 
-    console.log( "counter is: "+panel_count);
 
 
 	//get the next main_panel down
     console.log( "Next panel is: "+panels[panel_count] );
-    console.log( panels[panel_count] );
 
 	//scroll to the next main_panel down
     $( "#"+panels[panel_count] ).ScrollTo();
