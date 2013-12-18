@@ -13,35 +13,86 @@
 </head>
 
 <body>
-<div id="welcome"       class="main_panel"  data-title="Welcome" style="background-color:#666666">
-	<h3>Section 0</h3>
+
+<div id="welcome"       class="main_panel btn-primary"  data-title="Welcome">
     <h1>David Eddy, Web Developer</h1>
-    <div class="glyphicon glyphicon-sound-stereo">&nbsp;</div>
-    <h2>I don't make pretty web sites,</h2>
-    <h2 class="indent_one">I make pretty websites work</h2>
+    <h1 class="glyphicon glyphicon-sound-stereo">&nbsp;</h1>
+    <h2 style="position:relative;left:-5%">I don't make pretty web sites...</h2>
+    <h2 style="position:relative;left:5%">...I make pretty websites work</h2>
 
     <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
 </div>
 
-<div id="web_dev"       class="main_panel"  data-title="Web Development"  style="background-color:#FFFFFF">
+<div id="web_dev"       class="main_panel btn-info"  data-title="Web Development">
     <?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
-	<h3>Section 1</h3>
+	<h2>Web Development</h2>
+
+    <div class="row">
+        <ul class="list-inline">
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="pencil" class="img-circle">
+                <h3>HealthPlan Serv.</h3>
+                <h6>Internal web tool development</h6>
+            </li>
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="folder" class="img-circle">
+                <h3>K & J Managed Sol.</h3>
+                <h6>Web Department Lead</h6>
+             </li>
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="person" class="img-circle">
+                <h3>Traderlanet.com</h3>
+                <h6>Jr. Developer</h6>
+            </li>
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="person" class="img-circle">
+                <h3>Social Media</h3>
+                <h6>lore ipsum</h6>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <ul class="list-inline">
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="pencil" class="img-circle">
+                <h3>Content Writing</h3>
+                <h6>lore ipsum</h6>
+            </li>
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="folder" class="img-circle">
+                <h3>Design</h3>
+                <h6>lore ipsum</h6>
+             </li>
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="person" class="img-circle">
+                <h3>Social Media</h3>
+                <h6>lore ipsum</h6>
+            </li>
+            <li class="col-md-3">
+                <img src="//placehold.it/125x125" alt="person" class="img-circle">
+                <h3>Social Media</h3>
+                <h6>lore ipsum</h6>
+            </li>
+        </ul>
+    </div>
+
     <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
 </div>
 
-<div id="multi_media"   class="main_panel"  data-title="Multi-media" style="background-color:#00FF00">
+<div id="multi_media"   class="main_panel btn-warning"  data-title="Multi-media">
 	<?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
 	<h3>Section 2</h3>
     <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
 </div>
 
-<div id="about_me"      class="main_panel"  data-title="About Me" style="background-color:#FF0000">
+<div id="about_me"      class="main_panel btn-danger"  data-title="About Me">
 	<?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
 	<h3>Section 3</h3>
     <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
 </div>
 
-<div id="hire"          class="main_panel"  data-title="Hire" style="background-color:#0000FF">
+<div id="hire"          class="main_panel btn-success"  data-title="Hire>
 	<?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
 	<h3>Section 4</h3>
 </div>

@@ -1,3 +1,3 @@
 <?php
-echo '<a class="scroll up glyphicon glyphicon-chevron-up">up</a>';
+echo '<h1><a class="scroll up glyphicon glyphicon-chevron-up">&nbsp;</a></h1>';
 ?>

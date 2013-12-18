@@ -51,6 +51,8 @@ $(".scroll").click(function() {
 
 /* on ready actions */
 $( document ).ready(function() {
+    console.log( 'DOM ready()' );
+
     //Get the number of main_panel divs to use with the sroll feature
     $( "body > div").each(function(){
     	panels.push( $( this ).attr( "id" ) );

@@ -7,11 +7,19 @@ body {
 .main_panel {
     min-width: 100%;
     overflow-y: scroll;
-    overflow-x: hidden;x;
+    overflow-x: hidden;
+    text-align: center;
 }
 
 body >.scroll {
 margin: 0 auto; width: 900px;
+}
+
+/* do not place underlines under the nav arrows */
+div h1 a.scroll {
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
 }
 
 .scroll up {
