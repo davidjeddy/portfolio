@@ -5,7 +5,10 @@ echo '
 		<a
 			class="scroll down glyphicon glyphicon-chevron-down"
 			data-toggle="tooltip"
-		>&nbsp;</a>
+			data-placement="top"
+			title="Scroll down"
+			data-original-title="Scroll down"
+		></a>
 	</h1>
 </div>';
 ?>

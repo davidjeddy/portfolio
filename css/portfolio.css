@@ -11,16 +11,18 @@ body {
     text-align: center;
 }
 
+/* scroll up / down styling */
 body >.scroll {
 	margin: 0 auto;
 	width: 100%;
 }
 
-/* do not place underlines under the nav arrows */
 div h1 a.scroll {
 	text-decoration: none;
 	cursor: pointer;
 	color: #ffffff;
+	position: relative;
+	left: -20px;
 }
 
 .scroll up {
