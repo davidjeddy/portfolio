@@ -1,6 +1,6 @@
 <?php
 echo '
-<div style="width: 50%; margin: 0 auto;">
+<div style="width: 100%; margin: 0 auto;">
 	<h1>
 		<a
 			class="scroll down glyphicon glyphicon-chevron-down"

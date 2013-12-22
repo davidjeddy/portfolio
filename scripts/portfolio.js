@@ -8,10 +8,12 @@ if ( ! window.console ) console = { log: function(){} };
 var win_height 	= 600;
 var panels		= Array();
 var panel_count = 0;
+var first_panel_heading = "3.3";
 
 
 
 /* jQ logic */
+//functions
 /* Button actions */
 $(".scroll").click(function() {
     console.log( ".scroll triggered" );
@@ -53,6 +55,13 @@ $(".scroll").click(function() {
 $( document ).ready(function() {
     console.log( 'DOM ready()' );
 
+    $( "h1.first_panel_heading").css({"padding-top": (win_height / first_panel_heading)+"px"});
+
+/*
+$(function() {
+  $("html body div#welcome.main_panel div h1 a.scroll").width("150%").height("150%");
+});*/
+
     //Get the number of main_panel divs to use with the sroll feature
     $( "body > div").each(function(){
     	panels.push( $( this ).attr( "id" ) );
@@ -65,6 +74,12 @@ $( document ).ready(function() {
 
 /* when the browser is resized, resize the main_panel areas */
 $( window ).resize(function() {
-	$( ".main_panel" ).height( $( window ).height() );
+	win_height = $( window ).height();
+
+    console.log("window resized: "+win_height);
+
+    $( ".main_panel" ).height( win_height );
+
+    $( "h1.first_panel_heading").css({"padding-top": (win_height / first_panel_heading)+"px"});
 });
--->-
+-->

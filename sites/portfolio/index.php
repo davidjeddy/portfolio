@@ -15,17 +15,17 @@
 <body>
 
 <div id="welcome"       class="main_panel btn-primary"  data-title="Welcome">
-    <h1>David Eddy, Web Developer</h1>
+    <h1 class="first_panel_heading">David Eddy, Web Developer</h1>
     <h1 class="glyphicon glyphicon-sound-stereo">&nbsp;</h1>
     <h2 style="position:relative;left:-5%">I don't make pretty web sites...</h2>
-    <h2 style="position:relative;left:5%">...I make pretty websites work</h2>
+    <h2 style="position:relative;left:5%">...I make pretty websites work.</h2>
 
     <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
 </div>
 
-<div id="web_dev"       class="main_panel btn-info"  data-title="Web Development">
+<div id="web_proj"       class="main_panel btn-info"  data-title="Web Projects">
     <?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
-	<h2>Web Development</h2>
+	<h2>Web Projects</h2>
 
     <div class="row">
         <ul class="list-inline">
@@ -80,21 +80,9 @@
     <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
 </div>
 
-<div id="multi_media"   class="main_panel btn-warning"  data-title="Multi-media">
-	<?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
-	<h3>Section 2</h3>
-    <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
-</div>
-
-<div id="about_me"      class="main_panel btn-danger"  data-title="About Me">
-	<?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
-	<h3>Section 3</h3>
-    <?php include( SITEROOT.'/helpers/scrollDown.php'); ?>
-</div>
-
-<div id="hire"          class="main_panel btn-success"  data-title="Hire>
-	<?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
-	<h3>Section 4</h3>
+<div id="hire"          class="main_panel btn-success"  data-title="skills">
+    <?php include( SITEROOT.'/helpers/scrollUp.php'); ?>
+    <h3>sKills</h3>
 </div>
 
 <script language="javascript" src="<?= SITEROOT; ?>/../../vendor/components/jquery/jquery.min.js"></script>
