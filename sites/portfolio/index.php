@@ -51,24 +51,24 @@
     <div class="row">
         <ul class="list-inline">
             <li class="col-md-3">
-                <img src="//placehold.it/125x125" alt="pencil" class="img-circle">
-                <h3>HealthPlan Serv.</h3>
+                <img src="//placehold.it/100x100" alt="pencil" class="img-circle">
+                <h3>HPS Interal<br />Applications</h3>
                 <h6>Internal web tool development</h6>
             </li>
             <li class="col-md-3">
-                <img src="//placehold.it/125x125" alt="folder" class="img-circle">
-                <h3>K & J Managed Sol.</h3>
+                <img src="//placehold.it/100x100" alt="folder" class="img-circle">
+                <h3>K & J Managed<br />Solutions</h3>
                 <h6>Web Department Lead</h6>
              </li>
             <li class="col-md-3">
-                <img src="//placehold.it/125x125" alt="person" class="img-circle">
-                <h3>Traderlanet.com</h3>
+                <img src="//placehold.it/100x100" alt="person" class="img-circle">
+                <h3>Traderlanet.com<br />&nbsp;</h3>
                 <h6>Jr. Developer</h6>
             </li>
             <li class="col-md-3">
-                <img src="//placehold.it/125x125" alt="person" class="img-circle">
-                <h3>Social Media</h3>
-                <h6>lore ipsum</h6>
+                <img src="//placehold.it/100x100" alt="person" class="img-circle">
+                <h3>Freelance<br />Projects</h3>
+                <h6>Example of freelance projects</h6>
             </li>
         </ul>
     </div>
