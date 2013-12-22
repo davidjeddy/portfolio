@@ -13,7 +13,24 @@
 </head>
 
 <body>
+<!-- twtbs modal alert window -->
+<div id="modal-container" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- dialog body -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        Hello world!
+      </div>
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary">OK</button></div>
+    </div>
+  </div>
+</div>
 
+
+
+<!-- Main content elements -->
 <div id="welcome"       class="main_panel btn-primary"  data-title="Welcome">
     <h1 class="first_panel_heading">David Eddy, Web Developer</h1>
     <h1 class="glyphicon glyphicon-sound-stereo">&nbsp;</h1>
@@ -88,6 +105,7 @@
 <script language="javascript" src="<?= SITEROOT; ?>/../../vendor/components/jquery/jquery.min.js"></script>
 <script language="javascript" src="<?= SITEROOT; ?>/../../vendor/twitter/bootstrap/dist/js/bootstrap.min.js"></script>
 <script language="javascript" src="<?= SITEROOT; ?>/../../vendor/balupton/jquery-scrollto/src/documents/lib/jquery-scrollto.js"></script>
+<script language="javascript" src="<?= SITEROOT; ?>/../../vendor/makeusabrew/bootbox/bootbox.js"></script>
 <script language="javascript" src="<?= SITEROOT; ?>/../../scripts/portfolio.js"></script>
 
 </body>

@@ -4,11 +4,22 @@ if ( ! window.console ) console = { log: function(){} };
 
 
 
+function showSmallWindowNotice() {
+    console.log( "showSmallWindowNotice() called" );
+    $("#modal-container").trigger("show");
+
+    return true;
+}
+
+
+
 /* global vars */
-var win_height 	= 600;
-var panels		= Array();
+var win_height 	= 0;
+var win_width   = 0;
+var first_panel_heading = "5.0";
+
+var panels      = Array();
 var panel_count = 0;
-var first_panel_heading = "3.3";
 
 
 
@@ -55,30 +66,28 @@ $(".scroll").click(function() {
 $( document ).ready(function() {
     console.log( 'DOM ready()' );
 
-    $( "h1.first_panel_heading").css({"padding-top": (win_height / first_panel_heading)+"px"});
+    $( window ).trigger("resize");
 
-/*
-$(function() {
-  $("html body div#welcome.main_panel div h1 a.scroll").width("150%").height("150%");
-});*/
-
-    //Get the number of main_panel divs to use with the sroll feature
-    $( "body > div").each(function(){
+    //Get the number of div.main_panel to use with the sroll feature
+    $( "body div.main_panel").each(function(){
     	panels.push( $( this ).attr( "id" ) );
     });
 
     console.log( "panels: "+panels );
 
-    $( ".main_panel" ).height( $( window ).height() );
+
 });
 
 /* when the browser is resized, resize the main_panel areas */
 $( window ).resize(function() {
 	win_height = $( window ).height();
+    win_width =  $( window ).width();
 
-    console.log("window resized: "+win_height);
+    console.log("window resized to height: "+win_height+" and width:"+win_width);
 
-    $( ".main_panel" ).height( win_height );
+    if (win_width < 640 || win_height < 480 ) { showSmallWindowNotice(); }
+
+    $( ".main_panel" ).height( win_height ).width( win_width );
 
     $( "h1.first_panel_heading").css({"padding-top": (win_height / first_panel_heading)+"px"});
 });
