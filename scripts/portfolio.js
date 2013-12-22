@@ -5,8 +5,9 @@ if ( ! window.console ) console = { log: function(){} };
 
 
 function showSmallWindowNotice() {
-    console.log( "showSmallWindowNotice() called" );
-    $("#modal-container").trigger("show");
+    console.log("showSmallWindowNotice() called");
+
+    bootbox.alert("Your window is to small, please resize to fully enjoy the site.");
 
     return true;
 }
@@ -62,6 +63,8 @@ $(".scroll").click(function() {
     return true;
 });
 
+
+
 /* on ready actions */
 $( document ).ready(function() {
     console.log( 'DOM ready()' );
@@ -74,8 +77,6 @@ $( document ).ready(function() {
     });
 
     console.log( "panels: "+panels );
-
-
 });
 
 /* when the browser is resized, resize the main_panel areas */
