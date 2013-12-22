@@ -4,20 +4,10 @@ if ( ! window.console ) console = { log: function(){} };
 
 
 
-function showSmallWindowNotice() {
-    console.log("showSmallWindowNotice() called");
-
-    bootbox.alert("Your window is to small, please resize to fully enjoy the site.");
-
-    return true;
-}
-
-
-
 /* global vars */
 var win_height 	= 0;
 var win_width   = 0;
-var first_panel_heading = "5.0";
+var first_panel_heading = "5.0"; // the 'main header' for the first panel
 
 var panels      = Array();
 var panel_count = 0;
@@ -86,7 +76,9 @@ $( window ).resize(function() {
 
     console.log("window resized to height: "+win_height+" and width:"+win_width);
 
-    if (win_width < 640 || win_height < 480 ) { showSmallWindowNotice(); }
+    if (win_width < 640 || win_height < 480 ) {
+        bootbox.alert("Your window is to small, please resize to fully enjoy the site.");
+    }
 
     $( ".main_panel" ).height( win_height ).width( win_width );
 
