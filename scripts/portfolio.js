@@ -77,7 +77,7 @@ $( window ).resize(function() {
     console.log("window resized to height: "+win_height+" and width:"+win_width);
 
     if (win_width < 640 || win_height < 480 ) {
-        bootbox.alert("Your window is to small, please resize to fully enjoy the site.");
+        bootbox.alert("Your window is to small, please resize to fully enjoy the site.<p>(Or you zoom setting is to high.</p>");
     }
 
     $( ".main_panel" ).height( win_height ).width( win_width );
