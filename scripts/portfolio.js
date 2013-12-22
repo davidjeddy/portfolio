@@ -59,14 +59,16 @@ $(".scroll").click(function() {
 $( document ).ready(function() {
     console.log( 'DOM ready()' );
 
+    //Trigger the resize method on initial DOM ready
     $( window ).trigger("resize");
+
+    // init the tool tips for scrollUp and scrollDown
+    $('.scroll').tooltip();
 
     //Get the number of div.main_panel to use with the sroll feature
     $( "body div.main_panel").each(function(){
     	panels.push( $( this ).attr( "id" ) );
     });
-
-    console.log( "panels: "+panels );
 });
 
 /* when the browser is resized, resize the main_panel areas */
@@ -76,12 +78,15 @@ $( window ).resize(function() {
 
     console.log("window resized to height: "+win_height+" and width:"+win_width);
 
+    // minimal safe small sizes
     if (win_width < 640 || win_height < 480 ) {
         bootbox.alert("Your window is to small, please resize to fully enjoy the site.");
     }
 
+    // resize the main panels
     $( ".main_panel" ).height( win_height ).width( win_width );
 
+    //
     $( "h1.first_panel_heading").css({"padding-top": (win_height / first_panel_heading)+"px"});
 });
 -->

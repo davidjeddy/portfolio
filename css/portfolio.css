@@ -21,6 +21,8 @@ div h1 a.scroll {
 	text-decoration: none;
 	cursor: pointer;
 	color: #ffffff;
+	position: relative;
+	left: -20px;
 }
 
 .scroll up {
