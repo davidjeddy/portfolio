@@ -43,7 +43,7 @@
 
     <div id="web_proj"      class="main_panel btn-success"  data-title="Web Projects">
         <?php include(SITEROOT.'/helpers/scrollUp.php'); ?>
-    	<h2>Web Projects</h2>
+        <h2>Web Projects</h2>
 
         <div class="row">
             <ul class="list-inline">
