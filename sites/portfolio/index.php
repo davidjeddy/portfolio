@@ -176,11 +176,11 @@
             <ul class="list-inline">
                 <li class="col-md-3">
                     <img src="//placehold.it/100x100" alt="pencil" class="img-circle">
-                    <h5>Windows</h5>
+                    <h5>jQuery</h5>
                 </li>
                 <li class="col-md-3">
                     <img src="//placehold.it/100x100" alt="person" class="img-circle">
-                    <h5>Hardware</h5>
+                    <h5>Bootstrap</h5>
                 </li>
                 <li class="col-md-3">
                     <img src="//placehold.it/100x100" alt="person" class="img-circle">
