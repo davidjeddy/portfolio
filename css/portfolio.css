@@ -22,7 +22,6 @@ div h1 a.scroll {
 	cursor: pointer;
 	color: #ffffff;
 	position: relative;
-	left: -20px;
 }
 
 .scroll up {
@@ -31,4 +30,8 @@ div h1 a.scroll {
 
 .scroll down {
 
+}
+
+.col-md-3 {
+	width: 24.5%;
 }
