@@ -38,6 +38,7 @@
         <h1 class="glyphicon glyphicon-sound-stereo">&nbsp;</h1>
         <h2 style="position:relative;left:-5%">I don't make pretty web sites...</h2>
         <h2 style="position:relative;left:5%">...I make pretty websites work.</h2>
+        <h1>&nbsp;</h1>
         <?php include(SITEROOT.'/helpers/scrollDown.php'); ?>
     </div>
 

@@ -59,16 +59,13 @@ $(".scroll").click(function() {
 $( document ).ready(function() {
     console.log( 'DOM ready()' );
 
-    $( "div#welcome.main_panel div h1 a.scroll" ).on("mouseover", function(){
-        console.log('mouseover');
-        $( this ).tooltip();
-    });
 
     //Trigger the resize method on initial DOM ready
     $( window ).trigger("resize");
 
     // init the tool tips for scrollUp and scrollDown
-    //$('.scroll').tooltip();
+    $('.scroll').tooltip();
+    $( "div#welcome.main_panel div h1 a.scroll" ).tooltip('show');
 
     //Get the number of div.main_panel to use with the sroll feature
     $( "body div.main_panel").each(function(){
@@ -86,9 +83,9 @@ $( window ).on("resize", function() {
     // minimal safe small sizes, also check that the error is not already displaying
     if (
         ( win_width < 640 || win_height < 480 )
-        && $( 'body.modal-open div.bootbox' ).css( 'visibility' ) != 'visible') {
+        && $( 'body.modal-open div.bootbox' ).css( 'visibility' ) != 'visible'
+    ) {
 
-        console.log( $( 'body.modal-open div.bootbox :first' ).css( 'visibility' ) );
         bootbox.alert("Your window is to small, please resize to fully enjoy the site.<p>(Or you zoom setting is to high.)</p>");
     }
 
