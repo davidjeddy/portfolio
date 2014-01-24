@@ -33,6 +33,18 @@
                     "reference": "f4ced08acee9ba17a542d72d44db8c868f5379c2"
                 }
             }
+        },
+        "makeusabrew": {
+            "type": "package",
+            "package": {
+                "name": "toorshia/justgage",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/toorshia/justgage.git",
+                    "type": "git",
+                    "reference": "ae4ff0304d9938f523ba890e2674aa021bc127fd"
+                }
+            }
         }
     },
         "require": {
@@ -40,6 +52,7 @@
         "twitter/bootstrap": "3.0.x",
         "monolog/monolog": "1.7.x",
         "balupton/jquery-scrollto": "1.0.0",
-        "makeusabrew/bootbox": "4.1.0"
+        "makeusabrew/bootbox": "4.1.0",
+        "toorshia/justgage": "1.0.0"
     }
 }
