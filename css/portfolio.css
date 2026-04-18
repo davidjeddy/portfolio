@@ -1,0 +1,34 @@
+/* CSS Document */
+body {
+    overflow: hidden;
+    text-align: center;
+}
+
+.main_panel {
+    min-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* scroll up / down styling */
+body >.scroll {
+	margin: 0 auto;
+	width: 100%;
+}
+
+div h1 a.scroll {
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+	position: relative;
+	left: -20px;
+}
+
+.scroll up {
+
+}
+
+.scroll down {
+
+}
